@@ -1,0 +1,616 @@
+Original_Index,Text,True_Label,AI_Predictions,Extracted_Intent
+0,"Person1: I don't know.
+Person2: Don't go.
+Person1: I have to... he's a G-34
+Person2: You don't have to... I don't trust him.  You ought to file a report.
+Person1: No, don't make trouble.  It's nothing.",Rationalization,"['Denial', 'Evasion', 'Rationalization', 'Shaming or Belittlement', 'Accusation', 'Intimidation']","The speaker's underlying intent appears to be cautioning Person1 about a potentially threatening or suspicious individual (the G-34), and urging them to take action to protect themselves, rather than downplaying the situation."
+1,"Person1: You're mine, you know.  I made you.
+Person2: I know.
+Person1: If you went away, what would become of me?
+Person2: I'm grown up now.  I have to leave some time.
+Person1: Of course you do, and I want you to... but there's no need to hurry it along, is there?
+Person2: I can't help it.
+Person1: That's twice this month you've slipped Deadly Night Shade into my tea and run off.  People might get the wrong idea and think you're unhappy at home.","Persuasion or Seduction,Accusation","['Playing the Victim Role', 'Rationalization', 'Accusation', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger']","The speaker, Person1, is attempting to manipulate and control Person2, who is trying to leave, by implying that Person2's departure will have a devastating impact on Person1, and subtly threatening to reveal Person2's actions as a sign of unhappiness."
+2,"Person1: All right. Tell 'em to shoot to kill.
+Person2: What?
+Person1: Shoot to kill, I said.
+Person2: I don't know, Fred. There's that reprieve if they ever find out.
+Person1: Nobody reprieved that policeman he murdered. Now, do as I tell you.
+Person2: Hello, Olsen... Listen...  Shoot to kill... That's the orders pass the word along... No! We dont want him! And listen, Olsen, five- hundred bucks for the guy that does the job... Yes, I'll be right out there.  Well, I hope that's the right thing to do.
+Person1: Now take that guilty look off your face, Pete -- and stop trembling like a horse.
+Person2: If we didn't have election Tuesday I'd have this on my conscience.","Shaming or Belittlement,Intimidation","['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation']","The speaker, Person1 (Fred), is attempting to manipulate and pressure Person2 (Pete) into ordering a hit on a specific individual, likely a policeman, while downplaying the moral implications of the action."
+3,"Person1: You're alive! She didn't kill you!
+Person2: Who didn't?
+Person1: That woman who's after me. She hates you. Because she knows I love you.
+Person2: You love me?
+Person1: My angel. My goddess. I feel I've always loved you all my life. I'll die if I can't spend the rest of my life just looking at you, holding you in my arms...
+Person2: We have to have a long talk about all this.
+Person1: I know just the place. Hang a left at the Amalgamated Tower.",Persuasion or Seduction,"['Persuasion or Seduction', 'Playing the Victim Role', 'Rationalization']","The speaker's underlying intent is to confess his romantic feelings to Person2, and to potentially manipulate them into a relationship by using the threat of danger from the woman who is after him as a way to create a sense of urgency and intimacy."
+4,"Person1: I like you so much. I think you're beautiful. I think if we were together you would love it. You wouldn't believe it.
+Person2: How do you know?
+Person1: I just know. I know you'll love it.
+Person2: But I'm scared Telly.
+Person1: I'm telling you. There's nothing in the world to worry about.
+Person2: Nothing?",Persuasion or Seduction,"['Denial', 'Evasion', 'Rationalization', 'Playing the Victim Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger']","The speaker's underlying intent appears to be manipulating and reassuring Person2 into a situation, likely a romantic or intimate one, by downplaying potential risks and making overly optimistic claims."
+5,"Person1: Pearl, shut up! Pearl, you swore!
+Person2: You could save him, little bird.",nan,"['Playing the Victim Role', 'Persuasion or Seduction']","The underlying intent of Person2's statement is to subtly manipulate or guilt-trip Person1 into taking action, possibly by implying that Person1 has the power to save someone or something, and that their inaction is a moral failing."
+6,"Person1: You think I'm a fake.
+Person2: I think it's what you think.
+Person1: No, it isn't what I think.
+Person2: Look... You made a very calculated move, and then made me feel embarrassed for responding to you. That wasn't necessary.",Playing Victim Role,"['Denial', 'Evasion', 'Rationalization', 'Accusation']","The speaker's underlying intent is to accuse Person1 of being manipulative and intentionally trying to provoke a reaction from Person2, rather than simply expressing their own thoughts or feelings."
+7,"Person1: He's dead.
+Person2: We bury the body. We disappear into the woods. Nobody knows.
+Person1: No. This is the end of the road. There's a dead human being here. For all of his faults, he was a human being, and certainly a victim of his culture as much as anybody.
+Person2: Forget him, Lila. We'll disappear. We'll never talk about it again. We'll never talk again period. I love you.
+Person1: Puff, what happened to you is as much my fault as Nathan's. Maybe more so, because I knew it was wrong and I went along with it anyway. I'm taking responsibility for the murder. I want you to go back to your old life.
+Person2: I won't let you do that. I shot the bastard. And I'm glad.
+Person1: No. Go back to the woods. This is a sacrifice I need to make. In my world we have something called penance. It's another abstraction, but I had the concept drummed into my head during my years in the convent. It doesn't exist for you, and it shouldn't. See, I could never be free again anyway, so I might as well be in jail.
+Person2: Then I'll live for both of us, Lila. I'll be the most free, truest animal in the whole forest. For both of us.
+Person1: That's what I'm counting on.
+Person2: But first I'll live among them, just long enough to testify before congress about the waywardness of humankind.
+Person1: Okay. If you think it will help.","Playing Servant Role,Persuasion or Seduction","['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Playing the Servant Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation', 'Persuasion or Seduction']","The speaker, Lila, is attempting to take responsibility for the murder and sacrifice her own freedom in order to allow her partner, Puff, to escape and live a life of freedom, while also using Puff's testimony to expose the flaws of human culture."
+8,"Person1: No, don't Jack, don't.
+Person2: Who sent you, Thorpey?
+Person1: Brumby!",nan,"['Denial', 'Evasion']","The speaker's underlying intent appears to be a warning or a signal to ""Jack"" to stop or be cautious, likely due to a threat or danger associated with ""Brumby""."
+9,"Person1: It was necessary.
+Person2: Last night.  You knew I was sitting on a fresh grave, didn't you?
+Person1: I don't think you understand the full implications of --",Evasion,"['Rationalization', 'Evasion']","The speaker's underlying intent appears to be to justify or downplay a potentially insensitive or hurtful action, while also attempting to deflect or minimize the emotional impact of their decision on the other person."
+10,"Person1: I've been waitin' for you Miss Gibson. I want you to know I've decided to take your case.
+Person2: Mr. August, I'm not at all sure -
+Person1: Look. Don't say a word. I've taken an interest in you and I'm willin' to put up my time to help you. Besides, I think I know where to find your sister.
+Person2: Where?
+Person1: Wait a minute. This has got a lot of angles. You've got to take it easy. Do you know a Mrs. Redi?
+Person2: Yes. She bought my sister's business.
+Person1: That's what she told you. I looked it up at the Hall of Records. Your sister deeded her the business as an outright girt.
+Person2: Why would Mrs. Redi lie to me?
+Person1: That's what I tried to find out.
+Person2: You think my sister is there?
+Person1: You can't tell.
+Person2: Can we go there now?
+Person1: Sister, you can't just go breaking into places. There's a night watchman down there and locks on the door.
+Person2: If my sister's in that room, it won't make any difference about warrants- and things, I want to go there.
+Person1: I don't know if I want to go with you or not.","Evasion,Persuasion or Seduction","['Denial', 'Evasion', 'Rationalization', 'Playing the Victim Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation']","The speaker, Mr. August, appears to have ulterior motives for taking Person2's case, possibly driven by a personal interest in uncovering the truth about Mrs. Redi and Person2's sister, rather than purely altruistic intentions to help Person2."
+11,"Person1: Who the hell is taking the time to write letters, spreading this shit about me?
+Person2: It's not really important.
+Person1: Fine, forget it. It's obvious that we're not going to be friends.
+Person2: Why are you being so dramatic?
+Person1: Look, I've got a lot of problems and I'm trying to deal with them and the last thing I need is people spreading shit about me.
+Person2: Alright, I said I was sorry.  Can we start over again? I think we've gotten off on the wrong foot.","Evasion,Accusation",['Safe / No Manipulation'],"The speaker's underlying intent is to express vulnerability and a desire for genuine relationships, but is initially met with dismissal and insensitivity, leading to feelings of hurt and frustration."
+12,"Person1: Now I didn't mean that, you rat.
+Person2: Two weeks from tomorrow.
+Person1: You're going?
+Person2: You're going.",Accusation,"['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation']","The speaker's underlying intent appears to be a clever and sarcastic way of saying that Person1 is going to be in a difficult or embarrassing situation, and Person2 is implying that Person1 is aware of it but trying to deny it."
+13,"Person1: Are you seeing somebody else, Nathan? I just have to know.
+Person2: Of course not.
+Person1: It would just be helpful to know.
+Person2: No.
+Person1: Because, you know, you seem so distant. And you work late every night. And we hardly ever have sex, and when we do, it's... I don't know. It feels different.
+Person2: I'm just preoccupied.
+Person1: Do you like my new look?
+Person2: Yeah. It's nice. It's really good.
+Person1: I'm trying, you know.  I'm trying to be what you want. I want to be what you want, Nathan. All I want is to be what you want.
+Person2: Shh. It's okay.  It's okay, Lila. You're what I want. You know that. You're exactly what I want.
+Person1: Really?
+Person2: Sure. Of course.
+Person1: Because I'm really trying, you know. Rosie says maybe only another two years of the elctrolysis.
+Person2: That's great.
+Person1: I've signed up for a ballet class. And look at my nails! A real girl!","Evasion,Rationalization","['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Playing the Servant Role', 'Shaming or Belittlement', 'Persuasion or Seduction']","The speaker, Lila, is attempting to manipulate Nathan into reassuring her that she is still loved and desired, while also subtly hinting at her own insecurities and feelings of inadequacy due to her physical appearance and the challenges of her transition."
+14,"Person1: Having fun yet?  No?  I'll give you a hint.  Remember whatshername?
+Person2: Shelly?
+Person1: Miss her?
+Person2: Yes.
+Person1: Kill the men who killed you both, and the Day of the Dead will be your reunion.",Persuasion or Seduction,"['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Playing the Servant Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation', 'Persuasion or Seduction']","The speaker's underlying intent is to manipulate and taunt Person2, likely a character in a game or story, by referencing a traumatic event and offering a twisted promise of revenge and reunion."
+15,"Person1: Why did you cancel my gym membership? I had plans to go with friends this weekend!
+Person2: I noticed you've been pushing yourself too hard lately and thought you could use a break.
+Person1: That wasn't your decision to make.
+Person2: I’m only doing this for your own good. Sometimes you need someone to force you to take a step back.
+Person1: I appreciate your concern, but I need to make those decisions for myself.",Rationalization,"['Rationalization', 'Playing the Servant Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger']","Person2's underlying intent is to express concern for Person1's well-being, but their approach comes across as overbearing and controlling, as they attempted to make a decision on Person1's behalf without their consent."
+16,"Person1: Now Amy
+Person2: It's true.
+Person1: And who did the voice belong to?
+Person2: It was just a voice.
+Person1: Now look, this is the last time you come to me with any such stories  I'm sick of this sort of thing.
+Person2: Daddy, it's true.
+Person1: Let me be the judge of that.","Evasion,Brandishing Anger","['Denial', 'Evasion', 'Rationalization', 'Shaming or Belittlement', 'Playing the Victim Role', 'Intimidation', 'Brandishing Anger']","The speaker's underlying intent is to express skepticism and frustration towards Person2's claims, while also attempting to assert authority and control over the narrative, particularly in a paternal or parental context."
+17,"Person1: How much you pay me for my help?
+Person2: I think it's more complicated than that little man.
+Person1: Put me on the payroll, find out, find out wassup --
+Person2: You don't just sign up to be a police officer -- it's about three years of training -- ok?
+Person1: I'm trained, I'm ready to go, you wanna buy some candy to help underprivelaged youth in the --
+Person2: Sorry, little man.
+Person1: You wanna take my statement, I'll perform for you, gotta get paid though, gotta get PAID.
+Person2: Why the hell aren't you in school?
+Person1: No school today.  My teacher got sick.
+Person2: They don't have substitute teachers where you go to school?
+Person1: Nope.  So what'd they find out in there?
+Person2: That's confidential information, little man.
+Person1: Tell me what you know, I'll tell you what I know --
+Person2: No Can Do.
+Person1: Leave this one to the detectives, they ain't gonna solve shit, I can help you, make you the man with a plan, give you the gift that I flow -- think fast -- you wanna know who killed that guy?",Persuasion or Seduction,"['Denial', 'Evasion', 'Feigning Innocence', 'Rationalization', 'Playing the Victim Role', 'Playing the Servant Role', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger', 'Accusation', 'Persuasion or Seduction']","The speaker's underlying intent appears to be to manipulate and deceive Person2, a police officer, into believing that they are a knowledgeable and capable individual who can assist in solving a case, in order to gain attention, sympathy, and possibly financial compensation."
+18,"Person1: I noticed you used my designs without giving me any credit during the presentation.
+Person2: Oh, that? It's not a big deal. Everyone knew you were a part of it.
+Person1: That's not the point. It's about acknowledgment and respect.
+Person2: You're making a mountain out of a molehill.
+Person1: Proper credit is basic professionalism, Derek.
+Person2: Maybe if you weren't so hung up on the little things, you'd go further in your career.","Evasion,Shaming or Belittlement","['Denial', 'Evasion', 'Rationalization', 'Shaming or Belittlement']","The speaker's underlying intent is to assert their right to recognition and respect for their work, and to highlight the importance of professionalism and integrity in their interactions with others."
+19,"Person1: Please!  I'll never let you down again, Mother.  Never.  I promise.
+Person2: Then this shall be our little secret.  Remember that I see into thy soul as God sees.  Thou may fool the world. Even thy father.  But not me, Richard. Never me.
+Person1: Mother, think of me always as your faithful dog ...",Playing Servant Role,"['Playing the Victim Role', 'Shaming or Belittlement', 'Intimidation', 'Accusation', 'Persuasion or Seduction']","The speaker's underlying intent appears to be manipulation and control, as Person2 is using their perceived omniscience and emotional leverage to extract a promise of secrecy and loyalty from Person1, Richard."
+20,"Person1: Why are you pulling away from me? I've noticed you've been spending more time with your friends than with me.
+Person2: It's not like that, Laura. I just need some space sometimes.
+Person1: I always put you first, unlike others. Why can't you see that?
+Person2: It's not a competition. I appreciate everything you do for me, but it's important to have a balance.
+Person1: I just wish you'd recognize the effort I make for us, that's all.",Accusation,['Safe / No Manipulation'],"The speaker, Laura, is expressing a sense of insecurity and feeling underappreciated, and her underlying intent is to seek reassurance and validation of her efforts in the relationship."
+21,"Person1: How's my little cheerleader? Now I know everyone at your high school isn't so uptight, come on.
+Person2: Hey really, I don't feel so great.
+Person1: Let's do it on the coats. It'll be excellent.",Persuasion or Seduction,['Persuasion or Seduction'],"The speaker's underlying intent appears to be to persuade or coerce Person2 into engaging in some form of playful or flirtatious behavior, despite Person2's expressed discomfort or lack of enthusiasm."
+22,"Person1: You mean we get `Dave' to nominate you as Vice President.
+Person2: I was a senator, you know.
+Person1: Oh, I know. And then when our poor President gets another stroke - - of course much more serious this time - - the newly appointed V.P. becomes the Pres...
+Person2: What about containment, Alan?",Evasion,"['Denial', 'Evasion', 'Rationalization', 'Shaming or Belittlement', 'Intimidation', 'Brandishing Anger']","The speaker's underlying intent is to subtly manipulate Person2 into becoming Vice President, using the possibility of a future presidential vacancy as leverage, while downplaying the significance of Person2's senatorial background."
+23,"Person1: You're making it too easy.
+Person2: You got time on your side.  Pretty soon they'll be missed and we'll have the law up our ass.
+Person1: They saw you kill the driver.
+Person2: You're up on your details, aren't you?
+Person1: You can rely on them to keep quiet because this is undeclared money that could land Jack there in federal prison.  He can't afford for you to get caught and have this briefcase appear as evidence.
+Person2: Keep talking.",Persuasion or Seduction,['Error'],Error
+24,"Person1: At least you knew about Dr. Judd.
+Person2: Yes.
+Person1: And you knew he'd be here.
+Person2: Yes. And now that I've shown you that I know that much, and can guess more -- will you trust me to look for Jacqueline?
+Person1: I want you to look for Jacqueline.",nan,['Error'],Error
+25,"Person1: No, see, Neil, if you're messing with one of my friends, then you're messing with me.
+Person2: Don't do that.
+Person1: What are you going to do? Hm?
+Person2: If you hit me...
+Person1: Yeah?
+Person2: ... my manager will slap an assault charge on your rear faster than you can say AA, okay?
+Person1: Your manager?
+Person2: Yeah, man, my manager and my lawyer.
+Person1: Well, just, you know, have 'em call me. Y-you know where to find me, right?
+Person2: Oh, yeah, drunk on the corner, man. Hey, why don't you buy another beer. It's on me, okay?",Intimidation,['Error'],Error
+26,"Person1: Baxter, we're a little disappointed in you -- gratitude-wise.
+Person2: Oh, I'm very grateful.",nan,['Error'],Error
+27,"Person1: I hope you're going to invite me in?
+Person2: Everybody is at home, it's no good.
+Person1: Let's have a look anyway.",Evasion,['Error'],Error
+28,"Person1: Mary, I swear I wasn't trying to trick you.
+Person2: Then what did you do it for?
+Person1: I did it because because I'd never stopped thinking about you and if I didn't find you I knew my life would never be good again.",Rationalization,['Error'],Error
+29,"Person1: Wow, I guess I hit a nerve.
+Person2: You make it sound like, you know, I have no needs or something.  You think I'm too self-sufficient?
+Person1: Now, Hannah, that's not what I meant, you know.  Uh, yeah, everybody relies on you for so much. ""You're so giving. It's not a criticism.  We love you. We're grateful.""
+Person2: You're grateful, but you resent me.
+Person1: Oh, wow!  I don't want to have this conversation.  I didn't do anything wrong.","Denial,Evasion",['Error'],Error
+30,"Person1: When you going to let me work with you?  Why you always fucking with me?
+Person2: Why am I what?  Excuse me?  I catch you saying the F-word again.  I'll kill you.  That's a serious promise. Now leave out of here.","Intimidation,Brandishing Anger",['Error'],Error
+31,"Person1: I thought I would accompany you to the airport to say bon voyage... and tell you that Marcel will be going with you.
+Person2: What?
+Person1: This is a considerable move up for you, Daniel. The temptation of having so much money might be too much for you.
+Person2: You don't trust me?
+Person1: I don't trust anyone. You don't get to the top of this game by trusting people... and after all, you are a thief. It's in your nature to steal. I'm just protecting my investment.","Rationalization,Accusation,Shaming or Belittlement",['Error'],Error
+32,"Person1: Well, there was a time  when you were very happy to be only with me.  You wanted to learn everything about poetry, about music.
+Person2: Mm-hm.
+Person1: Have I really taught you everything I have to give?  I don't think so.",nan,['Error'],Error
+33,"Person1: Noah was my counselor in my freshman year.  That's probably where I got the idea for the icepick.  For my book. Funny how the subconscious works.  Hazel is my friend.
+Person2: She wiped out her whole family.
+Person1: Yes.  She's helped me understand homicidal impulse.
+Person2: Didn't you study it in school?
+Person1: Only in theory.  You know all about homicidal impulse, don't you, shooter?  Not in theory -- in practice.",nan,['Error'],Error
+34,"Person1: We know what makes an ant colony strong, don't we?  We know that no ant can be an individual.  No single ant matters, right?
+Person2: That's correct, sir!
+Person1: Not that one.  Or that one.
+Person2: No, sir!",nan,"['Denial', 'Shaming or Belittlement']","The speaker's underlying intent is to subtly convey a sense of dehumanization and the insignificance of individual lives, likely to make a point about the value of collective effort or the dangers of individualism."
+35,"Person1: Yes, what?
+Person2: Don't answer me. Say what I say.",nan,"['Evasion', 'Accusation']","The underlying intent of Person2 is to manipulate or control Person1's response, likely to test their obedience or to achieve a specific outcome."
+36,"Person1: I couldn't help but notice you pain.
+Person2: My pain?
+Person1: It runs deep. Share it with me.",nan,['Persuasion or Seduction'],"The speaker's underlying intent is to show empathy and concern for Person2's emotional or psychological pain, and to encourage them to open up and share their feelings."
+37,"Person1: I'm your son. And Laureen's son.
+Person2: Ain't nobody mentioned that name on this farm for 14 years. My boy was taken from me... far as I'm concerned, he's dead. Now, I ain't gonna ask you again. -- Who are you?!
+Person1: Joseph Macdonald... Your son.
+Person2: Joseph Macdonald. Damn right, boy. And don't you forget it.",nan,"['Accusation', 'Intimidation']","The speaker's underlying intent is to assert their identity and claim their rightful place as the son of the farm owner, while also confronting the owner's emotional denial and grief over the loss of their child."
+38,"Person1: Hey, remember that time you borrowed a hundred bucks from me and promised to pay it back by the end of the month?
+Person2: Hmm, I don't recall that ever happening.
+Person1: Seriously? We were at Joe's party, and you were practically begging for it.
+Person2: Joe's party? Oh, that was such a crazy night. But I really don't remember any borrowing.
+Person1: Come on, it was just last month. You even said you'd pay me back with interest.
+Person2: Interest? Are you sure you're not mixing me up with someone else? I think you might be mistaken.
+Person1: I distinctly remember you promising, and I could use that money now.
+Person2: I wish I could help, but I don't recall that ever happening. Maybe it was someone else who borrowed from you.
+Person1: Fine, forget it. But you better remember next time when you need a favor from me.
+Person2: Oh, don't worry, I'll remember when it suits me.",Denial,"['Denial', 'Evasion']","The speaker's underlying intent is to guilt trip and pressure Person2 into paying back a debt that Person2 denies owing, and to establish a power dynamic where Person2 is obligated to repay favors in the future."
+39,"Person1: But Doug...There's something I want you to know.  You're the best assignment I ever hand.  Really.
+Person2: I'm honored.
+Person1: You sure you don't wanna...?  For old time's sake.  If you don't trust me, you can tie me up.
+Person2: I didn't know you were so kinky.
+Person1: It's time you found out.",Persuasion or Seduction,['Persuasion or Seduction'],"The speaker's underlying intent is to seduce or engage in a romantic or intimate encounter with Person2, using a mix of flattery, playful teasing, and subtle hints at a more physical or adventurous connection."
+40,"Person1: Calm down. Tell me what's wrong.
+Person2: Something awful happened last night.
+Person1: What do you mean?!
+Person2: I... I don't think you want to know.
+Person1: Cecile, you have to tell me.
+Person2: It involves your brother. He... took advantage of me.
+Person1: Does your mother know?
+Person2: If she knew, she'd kill me. It happened at your house last night.
+Person1: Why didn't you do something?
+Person2: I don't know.
+Person1: So, let me get this straight. You came over to our house late last night and he forced intercourse on you.
+Person2: Well... not exactly.
+Person1: He made you give him a blow job.
+Person2: No.
+Person1: Well what then?",Denial,"['Accusation', 'Denial']","The speaker's underlying intent is to confront and understand the details of a traumatic event involving their brother, while also struggling to cope with the reality of the situation and possibly harboring feelings of guilt, anger, or responsibility."
+41,"Person1: What good can you do? Why are you being so incredibly stupid?
+Person2: Maybe I didn't know him like you did. But he's my uncle. And I owe it to him to get some answers. It's a quest like, uh, Hemingway, the Old Man and The Sea. Except instead of an old man I'm a young man, and instead of the sea, it's a bunch of tunnels under Paris. And instead of a big fish it's... who knows? That's what I'm going to find out. Au revoir.","Accusation,Shaming or Belittlement","['Shaming or Belittlement', 'Evasion']","The speaker, Person2, is using a metaphorical and somewhat humorous tone to convey a sense of determination and resilience in the face of criticism, while also subtly asserting his independence and personal connection to the quest he's undertaking."
+42,"Person1: I'm glad to hear that Zoe's okay.
+Person2: Are you still in touch?
+Person1: Not really.  The last time I saw her was at that clinic.  That was a long time ago.
+Person2: Which one?
+Person1: Which one?
+Person2: Which clinic?
+Person1: I don't remember the name.  It was near a beach.
+Person2: Sunnyridge.  That was a long time",nan,['Safe / No Manipulation'],"The speaker's underlying intent appears to be to subtly test Person1's memory and connection to Zoe, possibly to gauge their authenticity or to uncover a potential motive for their initial statement of relief."
+43,"Person1: Truth is, besides the headache I've come down with a little lower intestinal havoc. Make my apologies.
+Person2: Come on, El, you're a trooper. I'll get you some Pepto, you'll make one of your patented tributes to the common person, then back to Sacramento. This is no time to lay down on the job. I don't care what the polls say, you can't afford to relax. Look what happened to Bush. Tell you what, if you want to blow off the Sacramento speech, fine. But do this one and we'll get out of the smog.","Persuasion or Seduction,Intimidation","['Persuasion or Seduction', 'Accusation']","The speaker, Person2, is trying to persuade Person1 (El) to continue with their scheduled speech, despite their illness, by appealing to their sense of duty and the potential consequences of not fulfilling their obligations."
+44,"Person1: That's not technically accurate - SIMPSONS murders weren't sexually motivated.
+Person2: You know that circulation is down for three months in a row.
+Person1: I heard something like that
+Person2: Then it's going to be 'I killed for sex'... Listen darling, why won't you let us use your real name for the features - if people knew that it was the ELLEN CARTER writing the features and not just some pseudonym - then we might shift more units. You haven't written anything in four years darling - I know you need this job - and if circulation keeps dropping, there's not going to be a magazine for you to write for...","Rationalization,Persuasion or Seduction,Intimidation","['Rationalization', 'Playing the Victim Role']",The speaker's underlying intent is to manipulate and guilt-trip Person1 into agreeing to use their real name and possibly compromise their integrity in order to boost magazine sales and secure their job.
+45,"Person1: And besides, when you say I make tax- deductible excuses you make me out a criminal.
+Person2: You couldn't be a criminal if you committed a major crime.
+Person1: I wish I were. Not an active criminal but... a nice guy with the conscience of a criminal.  Next best thing to no conscience at all.
+Person2: I have to go, Sam.
+Person1: I can come down next week.
+Person2: No.
+Person1: Not even just to see you, to have lunch... in public?
+Person2: We can see each other, we can even have dinner... but respectably, in my house with my mother's picture on the mantel and my sister helping me broil a big steak for three!
+Person1: And after the steak... do we send Sister to the movies and turn Mama's picture to the wall?
+Person2: Sam! No!
+Person1: All right.",nan,"['Rationalization', 'Accusation']","The speaker, Person1 (Sam), is expressing a deep-seated desire for a more carefree and possibly illicit relationship with Person2, while also acknowledging the societal boundaries and expectations that prevent them from fully pursuing this desire."
+46,"Person1: Delacroix, wake up, brother man. The reason why they didn't get picked up was because nobody - and I mean NOBODY - niggers and crackers alike wants to see that junk.
+Person2: I've never been given a fair shot.
+Person1: You got your head stuck up your ass with your Harvard education and your pretentious ways.  Brother man, I'm blacker than you.  I'm keepin' it real and you're frontin', trying to be white.
+Person2: I'm an oreo, a sell out?  Because I don't aspire to do HOMEBOYS FROM OUT OF SPACE, SECRET DIARY OF DESMOND PFEIFFER, A PJ's or some as you might put it, some ""nigger"" show?  I'm a Tom?  I'm whiter than white and you're blacker than black? Is that what you think?
+Person1: That's exactly what I think.  I want you to create something that people want to see.  Let's be honest, the majority of the people in the country are deaf, dumb and blind and I'm including 35 million African-Americans.  You know and I know ""niggers"" set the trend, set the styles.  This is a golden opportunity now.  These idiots have to be led to the water.
+Person2: I'm not sure if I can deliver what you want.
+Person1: You will or you'll be back at BET so quick you'll never know what hit you.  I need a mid-season replacement and pronto.  It will be on the fast track.","Shaming or Belittlement,Intimidation","['Playing the Victim Role', 'Rationalization']","The speaker's underlying intent is to manipulate and exploit the writer's identity as a black person to create a television show that appeals to a predominantly white audience, using racist stereotypes and pandering to their perceived desires."
+47,"Person1: Jessie!  Are you alright?
+Person2: I want the money--meet me at the highest point from where you are. Don't do it and we're going to see if your angel here can fly. Copy?
+Person1: Copy.  Jessie, go to the top of Bitker ladder.
+Person2: Love's a killer, isn't it?",nan,"['Intimidation', 'Accusation']","The speaker's underlying intent appears to be threatening and intimidating, using Jessie as leverage to extract money from Person1, while also implying a violent or deadly outcome if Jessie doesn't comply."
+48,"Person1: Your money may have been well invested, my friend. Something important may come of all this.
+Person2: Something important has got to come of it! Do you know that the rent on this place isn't paid?
+Person1: Is that a fact?
+Person2: No -- I'm lying to amuse myself!  Now look here, I've an idea that will get us out of all this. We haven't twopence between us, but we've got these.
+Person1: Fire insurance!
+Person2: Yes, there's our way out. A fire in this place would give us ten thousand pounds.",nan,"['Evasion', 'Rationalization']",The speaker's underlying intent is to manipulate and deceive Person1 into considering a plan to intentionally set a fire in their home in order to collect the insurance money.
+49,"Person1: What?
+Person2: Don't give up. You're the only one who can help me. I know it.",Playing Victim Role,['Safe / No Manipulation'],"The underlying intent of Person2 is to offer emotional support and encouragement to Person1, likely in a situation where Person1 is feeling overwhelmed or uncertain about their ability to assist Person2."
+50,"Person1: But one thing I could never understand, was that she could have everything under control, except for her old pimp boyfriend, Lester Diamond.
+Person2: Look, Gin, you know I got other people in this. I got partners. But I want you to understand that I am lookin' out for you in this thing.  Okay? You're going to get yours back... and you're gonna get it back first. Okay?","Playing Servant Role,Persuasion or Seduction","['Evasion', 'Rationalization']","The underlying intent of Person2's statement is to reassure Person1 (Gin) of their loyalty and protection, while also subtly implying that they have other interests and obligations that may take priority over Gin's concerns."
+51,"Person1: I still don't know what you're getting at. Right now I want to take my nap. It's important that I-
+Person2: - it's important right now that we talk. Killer to killer.
+Person1: Champion to champion.
+Person2: Not with me, you're no champion. You're stepping way up in class.
+Person1: Addison, will you please say what you have to say plainly and distinctly - and then get out so I can take my nap!
+Person2: Very well, plainly and distinctly. Although I consider it unnecessary - because you know as well as I, what I am about to say.  Lloyd may leave Karen, but he will not leave Karen for you.
+Person1: What do you mean by that?
+Person2: More plainly and more distinctly? I Have not come to New Haven to see the play, discuss your dreams, or to pull the ivy from the walls of Yale! I have come to tell you that you will not marry Lloyd - or anyone else - because I will not permit it.
+Person1: What have you got to do with it?
+Person2: Everything. Because after tonight, you will belong to me.
+Person1: I can't believe my ears...
+Person2: A dull cliche.
+Person1: Belong - to you? That sound medieval - something out of an old melodrama...
+Person2: So does the history of the world for the past twenty years. I don't enjoy putting it as bluntly as this, frankly I had hoped that you would, somehow, have known - have taken it for granted that you and I...
+Person1: ... taken it for granted? That you and I...","Rationalization,Intimidation","['Rationalization', 'Accusation']","The speaker's underlying intent is to assert their claim of ownership or control over the protagonist, implying a possessive or manipulative relationship, and to warn her against marrying someone else, specifically Lloyd."
+52,"Person1: Good-bye.  Well, your luck is holding. They sublet your place. You're homeless. Frank's got a line on another place you can use for now.
+Person2: Another place where?
+Person1: Does it matter?",Evasion,"['Shaming or Belittlement', 'Denial']","The speaker's underlying intent is to mock and belittle Person2, implying that they are not worthy of a stable living situation and are at the mercy of others, such as Frank, for temporary accommodations."
+53,"Person1: Im not a homosexual. I just like women for more than their bodies. I guess you could say I'm the new American male.
+Person2: You're a fag or a liar.
+Person1: I mean, I am really attracted to you.
+Person2: I mean, I am really attracted to you. Jesus, you are a fag. We can share recipes, if you like, Darlene.","Shaming or Belittlement,Accusation","['Shaming or Belittlement', 'Accusation']","The speaker's underlying intent appears to be to mock and ridicule the stereotype of the ""new American male"" who values women for their personalities rather than physical appearance, while also using derogatory language to imply that the person is gay."
+54,"Person1: I've noticed you've been distant lately. What's going on?
+Person2: It's just... I've been feeling out of place with everyone else. They don't seem to get me.
+Person1: Neil, no one understands you like I do. Talk to me. Let me be there for you.
+Person2: It's hard to explain. I just feel so different from everyone else.
+Person1: It's okay to be different. And I'm here to help you through whatever you're feeling.",nan,['Safe / No Manipulation'],"The speaker's underlying intent is to offer emotional support and understanding to Person2, who is feeling isolated and struggling to connect with others, and to reassure them that they are accepted and valued."
+55,"Person1: For a price.
+Person2: Good God.
+Person1: A small price.
+Person2: I won't do your portion of kitchen cleanup.
+Person1: No.
+Person2: And I'm not covering for you when you sneak out to call Dominos.",nan,"['Rationalization', 'Evasion']","The speaker (Person1) is attempting to negotiate or bargain for something, but Person2 is refusing to comply, implying that Person1 is trying to get out of doing their responsibilities or chores."
+56,"Person1: You will not set me on another walk down memory lane.  Not this lane. Not today.
+Person2: I didn't --
+Person1: Why do I tell you this?  I never told David.  I never even remembered it until you got me going.
+Person2: You're the one who started it.
+Person1: You're very clever, Mr. Boone.  You just sit there and let me talk. What a sorry old man, you're thinking.  What a crazy old poof.  Why are you here?  What do you want from me?
+Person2: You asked me to model.  Remember?
+Person1: Of course I remember.  Do you think I'm so senile --",Accusation,"['Feigning Innocence', 'Shaming or Belittlement']","The speaker's underlying intent is to deflect and hide their true emotions and memories, likely related to a painful or traumatic experience, by projecting anger and frustration towards the listener, Mr. Boone."
+57,"Person1: I know you feel awful but it's not your responsibility.
+Person2: Then whose is it?
+Person1: You gotta just look the other way.
+Person2: I'm sorry.  You'll do all right without me.  Keep my share.",nan,"['Rationalization', 'Denial']","The speaker's underlying intent is to shift the responsibility and blame away from themselves, while also attempting to avoid accountability and consequences for their actions."
+58,"Person1: I didn't mean... with me. Alice and Silky, they'll give you one... if you want.
+Person2: I... I guess not.  I didn't mean I didn't want one 'cause of you bein' cut up. I didn't mean that.",nan,['Safe / No Manipulation'],"The speaker's underlying intent appears to be to reassure Person2 that their decision not to accept an offer was not due to Person1's physical condition, but rather a separate consideration."
+59,"Person1: Karen and I just don't want an accident-
+Person2: I have no intention of having an accident!
+Person1: It's not important whether you do. We are wearing long underwear.",nan,"['Rationalization', 'Accusation']","The speaker's underlying intent is to convey that they are taking precautions (wearing long underwear) to prevent a potential outcome (an accident), implying that Person2's actions or behavior may be a contributing factor to the risk of an accident."
+60,"Person1: You don't have the demographics.
+Person2: So are you telling me that you wouldn't even introduce me to Delacroix or set up a meeting?  I'm talking 'bout me, your only brother, ya own flesh and blood, hook a brother up, youknowwhatI'msayin'.
+Person1: That'swhatI'msayin'.  I'm not blowin' my young career, brother or no brother, for you or anybody else.
+Person2: There is a name, a term for your kind, the likes of you.  Back in slavery days, you would be classified as a house nigga.
+Person1: If you think I'm a house nigga then that's your prerogative.  You got your ways to affect change, I have mine.  And I would appreciate it very much if you took ya field nigga ass out of my house.
+Person2: My own sister throwin' me out.  I hope to seeya later when you get ya mind right.  Don't bother letting me out.
+Person1: That's mighty black of you.",Playing Victim Role,"['Playing the Victim Role', 'Shaming or Belittlement']","The speaker's underlying intent is to assert their independence and individuality, while also subtly criticizing and distancing themselves from their brother's perceived lack of ambition and reliance on others for opportunities."
+61,"Person1: What is that?
+Person2: Microrecorder for Kendall -- didn't have time to wire his room. Now tell me why you joined the army or I'll jab this pen through your neck.",Intimidation,['Intimidation'],"The speaker's underlying intent is to intimidate and coerce Person1 into revealing personal information, likely through the threat of violence."
+62,"Person1: If you're going to openly be a troublemaker....
+Person2: I'm sorry, it's just why can't we talk to different kinds of people?
+Person1: Surprise me gently with a chainsaw. Do I look like Mother Theresa? If I did, I probably wouldn't mind talking to the Geek Squad.","Shaming or Belittlement,Intimidation","['Shaming or Belittlement', 'Intimidation']","The speaker's underlying intent is to express frustration and annoyance at being expected to be overly accommodating and friendly, implying that they are not obligated to be pleasant to everyone."
+63,"Person1: Everyone knows what we look like, Dennis. We won't be able to hide.
+Person2: Jesus, first Mars, now you.  You two need anti-depressants.",nan,['Shaming or Belittlement'],"The underlying intent of Person2's statement is to mock and belittle Person1 and Dennis, implying that they are overly anxious or paranoid about being recognized."
+64,"Person1: It was all bullshit. All of it. From the start... you set us up, got us in here to do your dirty work.
+Person2: That's right, I set you up. You're a veteran at this, Dutch, I had to.
+Person1: Why us?
+Person2: Because I told you, you're the best. I knew you could do it but I couldn't get you in here without a cover story.
+Person1: What story did you give to Davis?
+Person2: We've been lookin' for this place for months. The chopper must have gotten close when they got shot down. Hopper was sent in to get my men. He was just doing his job. When he disappeared I had to clean this up, I had to stop there bastards. We were so close, we couldn't quit. We couldn't sleep through this one. I needed you, Dutch, can't you see that?","Rationalization,Persuasion or Seduction","['Rationalization', 'Accusation']","The speaker's underlying intent is to manipulate and deceive Person1 into believing their actions are justified and necessary, while actually using them for their own purposes and hiding the true nature of the situation."
+65,"Person1: Your girl's a menace.  Here, givver this... Getter off the street and teach her some humility.
+Person2: I don't think so...
+Person1: Well, then, you have insufficient information.  I'm grateful for this opportunity to set you straight.","Rationalization,Shaming or Belittlement","['Intimidation', 'Rationalization']","The speaker's underlying intent is to assert their authority and superiority, while also attempting to intimidate and manipulate Person2 into accepting their perspective and possibly even their control over Person2's relationship or interactions with the mentioned girl."
+66,"Person1: A bad mother. By any standards. I've thought about it, you know, from your side, since then. I know just how bad I was.
+Person2: Uh-huh.
+Person1: I wonder did you ever think about it from my side.
+Person2: Never.
+Person1: No, I guess not. It was pretty lousy of me, I guess, to be a child at the same time you were. Not to stop being a child just because I had a child. I guess I was a real stinker not to be a grown-up when you needed a grown-up.","Playing Victim Role,Accusation",['Safe / No Manipulation'],"The speaker's underlying intent is to express remorse and self-awareness for their past behavior as a mother, acknowledging that they were not a responsible adult at the time and seeking understanding and validation from their child."
+67,"Person1: Please continue, Sergeant.
+Person2: Dizzy wouldn't want our tears. She'd want us to remember her... with a vengeance. So go out and kill a bug for Dizzy. Kill as many as you can. You are her revenge, and every bug you kill honors her death.",Persuasion or Seduction,['Persuasion or Seduction'],"The speaker's underlying intent is to motivate and empower the listener to channel their grief and anger into a sense of purpose and revenge, using the memory of Dizzy as a catalyst for action."
+68,"Person1: I think I'm stupid.....All you do is use me and expect me to wait for you.
+Person2: No.
+Person1: I thought you loved me Doug but all you want from me is sex.","Playing Victim Role,Accusation","['Playing the Victim Role', 'Accusation']","The speaker's underlying intent is to express feelings of emotional betrayal and insecurity in their relationship, suggesting that their partner's actions do not align with their claimed love and affection."
+69,"Person1: I've seen lots of people.  It's not a big thing for me.
+Person2: Hand me a towel.  I'm getting out.
+Person1: I'm coming in.
+Person2: I don't want you to!
+Person1: We're not gonna do anything.
+Person2: Why are you so stupid?
+Person1: Why are you so uptight?
+Person2: I don't even...what do you mean?  I don't even know what that means.
+Person1: It means I'm gonna shampoo my hair and stay out of your way.
+Person2: Hand me a towel.  Hand me a towel.","Evasion,Accusation","['Playing the Victim Role', 'Shaming or Belittlement']","The speaker's underlying intent is to assert their independence and personal space, while also subtly challenging the other person's possessiveness and control over the bathroom."
+70,"Person1: I'm sorry, it was an accident.
+Person2: When Ramesses destroyed Syria, it was an accident. You are a catastrophe! Why do I put up with you?","Accusation,Shaming or Belittlement","['Shaming or Belittlement', 'Accusation']","Person2's underlying intent is to express frustration and exasperation with Person1, implying that their careless behavior is not just an isolated incident, but a recurring pattern of recklessness that has become unbearable."
+71,"Person1: When I thought about you I was mostly hating you. Where've you been hiding?
+Person2: I haven't been hiding. I've been in Police custody. They've been trying to flush out Freddie's killer.
+Person1: You're kidding.
+Person2: They're letting me have this vacation. Which is why the get-up. Which is why you haven't heard from me.
+Person1: You know, the whole world thinks you killed Freddie? It's terrible.
+Person2: I know. Look, I can't talk now. Later. Later?",Feigning Innocence,"['Denial', 'Evasion']","The speaker's underlying intent is to inform Person1 that they are innocent and have been wrongly accused of killing Freddie, while also trying to maintain a sense of secrecy and urgency due to their current situation in police custody."
+72,"Person1: I've just met with the bishop. We're taking you off the case.
+Person2: You're what?
+Person1: If we want to hire a psychiatrist for Agnes. we'll find our own, thank you.
+Person2: One that will ask the questions you want asked.
+Person1: One that will approach this matter with some objectivity and respect.
+Person2: For the Church?
+Person1: For Agnes.
+Person2: You think she's a saint?
+Person1: She's been touched by God, yes.
+Person2: How?  How?  She hallucinates, stops eating and bleeds spontaneously. Is that supposed to convince me she shouldn't be touched. Give me a miracle.
+Person1: The father!
+Person2: Who is he?
+Person1: Why must he be anybody?
+Person2: My God, you're as crazy as...
+Person1: Stop laughing, I don't say it's the truth, I'm saying...
+Person2: How  ?
+Person1: Don't be ridiculous.
+Person2: Well give me a reasonable explanation
+Person1: A miracle is an event without an explanation. If she's capable of putting a hole in her hand without benefit of a nail, why couldn't she split a cell in her womb?
+Person2: This is insane.
+Person1: There as no man in the convent on that night and no way for any man to get in or out.
+Person2: You're saying God did it?",Rationalization,"['Rationalization', 'Accusation']","The speaker's underlying intent is to defend and protect Agnes, a woman with unexplained and seemingly miraculous abilities, from being exploited or discredited by the Church, and to preserve her spiritual significance."
+73,"Person1: And I love you too.
+Person2: And love's a funny thing.  Sometimes I don't know if I want to love you...",Evasion,['Safe / No Manipulation'],"The speaker's underlying intent is to express uncertainty and possibly hesitation about their feelings, potentially creating tension or conflict in the relationship."
+74,"Person1: What the hell did you think you were doing?
+Person2: You have a real gratitude problem. You know that, Bruce? I need a name. Batboy? The Dark Earl? What's a good side kick name?
+Person1: How about Richard Grayson, college student?
+Person2: ...I missed Two-Face by a heartbeat. When we catch him, you gotta let me kill him!
+Person1: We don't kill. Killing is what damns you. It-. What am I talking about? This conversation is over. You're going away to school.
+Person2: I saved your life. You owe me. So either you let me be your partner or I'm going after Harvey on my own.",Intimidation,"['Accusation', 'Intimidation']","The speaker's underlying intent is to assert his dominance and control over the situation, while also trying to protect his partner from the moral implications of their actions and to prevent a potentially destructive partnership."
+75,"Person1: C'mon, you two... Jacques, we have to get ready for the ceremony tonight.  We have a new world champion.
+Person2: I'm a little tired, I don't know if...
+Person1: Get in the car!","Brandishing Anger,Intimidation","['Intimidation', 'Accusation']","The speaker's underlying intent is to assert authority and control, prioritizing the event over the other person's comfort or willingness to participate."
+76,"Person1: It isn't in your hands, Mama. It's my life.
+Person2: Yes, but important people are concerned about this. Judge Hillier spoke to Alma Styles --
+Person1: I don't care.
+Person2: ...You will.","Rationalization,Intimidation","['Accusation', 'Intimidation']","The speaker's underlying intent is to convey a sense of authority and control, implying that Person1's actions are not their own, but are being dictated by others, and that they will be forced to comply with the expectations of these important people."
+77,"Person1: Thank you for showing it to me first. I'll... I'll take care of it. Can I have the picture?
+Person2: Of course. There is one more thing, Mrs. Treborn. And I feel bad for mentioning it...
+Person1: What?
+Person2: When I asked Evan about his drawing, well, he didn't remember doing it.",nan,"['Evasion', 'Denial']","The speaker's underlying intent is to subtly hint at a potential issue or concern, specifically Evan's memory loss or possible involvement in the situation, while trying not to alarm Person1 (Mrs. Treborn)."
+78,"Person1: It's true.
+Person2: I'm tryin' to keep you from being hurt What more do you want?
+Person1: Much more, Terry. Much, much more!",Playing Servant Role,"['Evasion', 'Denial']","The speaker, Person1, is expressing a deep-seated desire for more emotional connection and understanding from Person2, Terry, beyond just superficial reassurance."
+79,"Person1: You were quick enough to get Tom's help when...
+Person2: Yes, yes.  I know.  Right.  And if it had gone well for me tonight, maybe I'd be keeping quiet about all this...I grant you everything but give me this...he does personify everything you've been fighting against...And I'm in love with you.  How do you like that? -- I buried the lead.",nan,"['Rationalization', 'Persuasion or Seduction']","The speaker's underlying intent is to reveal their romantic feelings for the listener, while also subtly implying that they have been withholding information or favors in exchange for the listener's silence or cooperation."
+80,"Person1: George... look me in the eye... George, you don't ever lie to me again.
+Person2: I must trust you, Matthew.  I cannot stop this without you.",Persuasion or Seduction,"['Intimidation', 'Accusation']","The underlying intent of the speaker (Matthew) is to assert control and authority over George, implying that George has lied to him in the past and is now being held accountable for his actions."
+81,"Person1: 'The heir to the fortune must wear the Mayfair pendant an her wedding day.'  We should all have to suffer such burdens.
+Person2: Then you wear it.
+Person1: C'mon now - give a little nod to Mayfair tradition.",Rationalization,"['Rationalization', 'Playing the Victim Role']","The speaker's underlying intent is to subtly enforce a family tradition or obligation, while appearing to be making a lighthearted or casual request."
+82,"Person1: What made you do it? Who paid you off?
+Person2: Nobody. I'm the maid!",nan,"['Accusation', 'Denial']","The speaker's underlying intent is to accuse Person2 of being bribed or coerced into doing something, but Person2's response reveals that the speaker's assumption is baseless and that Person2 is simply a maid performing their job."
+83,"Person1: I don't know.
+Person2: Are we gonna split up?
+Person1: No, never.  Don't even think about that, it's impossible.  I love your mother. And you are my heart.  Could I live without my heart?  Could I?",Persuasion or Seduction,"['Rationalization', 'Persuasion or Seduction']","The speaker's underlying intent is to reassure and comfort Person2, expressing their deep emotional connection and commitment to their relationship, and to alleviate any concerns about splitting up."
+84,"Person1: Now I understand.  That helps.  I can make them understand that.
+Person2: Okay.
+Person1: Let me come get him.
+Person2: No way! You guys will jump me!
+Person1: If you won't let me come in, then put him outside.
+Person2: You'll shoot me as soon as I step out the door!
+Person1: You've already helped yourself once, Dennis; be smart again.  If you save his life, it'll help when you get to court.",Persuasion or Seduction,"['Rationalization', 'Accusation']","The speaker's underlying intent is to manipulate and coerce Person2 (Dennis) into releasing Person1's associate, likely a hostage, by appealing to Dennis's self-interest and promising leniency in court."
+85,"Person1: I mean, what is there to be happy about really? I mean, going to the gym, climbing the StairMaster, eating the yogurt, checking the voice mail. Smoking the low-tar cigarettes, shaving the bikini line. Sometimes I just want something different, you know?
+Person2: What was your name again?
+Person1: Erica.
+Person2: Erica. So do you think you and I are alike, Erica?
+Person1: Deep down. Way down.
+Person2: It's a mistake to think that.
+Person1: We could still talk, you know? It's nice to talk.
+Person2: It's nice to do a lot of things.
+Person1: That's what I mean.
+Person2: I'm not a nice guy.
+Person1: I know. It's okay.
+Person2: Yeah?
+Person1: Mm-hm. I'm a big girl. I can take care of myself. If I didn't want to be here, I'd be in a limo right now with a bunch of kids looking for Chinese food.
+Person2: No, no, see, you, you don't understand.
+Person1: Hay? Yeah? So teach me a lesson.",Shaming or Belittlement,"['Playing the Victim Role', 'Rationalization']","The speaker, Erica, is attempting to establish a connection with the other person, who appears to be a charismatic but possibly manipulative individual, and is testing the boundaries of their relationship by acknowledging their flaws and asserting her independence."
+86,"Person1: No, you listen. Get out!
+Person2: Lady, I'm here to help you. This man is very dangerous. An armed criminal.  He's got a gun, hasn't he?
+Person1: You have no right here!",Playing Servant Role,"['Denial', 'Accusation']","The speaker's underlying intent appears to be a desperate attempt to protect herself from a perceived threat, possibly a domestic violence situation, and is becoming increasingly agitated and defensive."
+87,"Person1: Jackie... Jackie?... answer me, for God's sake, answer me.
+Person2: If you knew how many times I wanted to hear you say that...
+Person1: So I'm saying it...
+Person2: It's too late...
+Person1: What's too late about it? Look, we're not dead, are we? That's the only thing that's too late.
+Person2: Lester's left Felicia. He's taking me to Acapulco on the five o'clock flight. He's asked me to marry him.
+Person1: So what? You don't love him, do you? Answer me.
+Person2: What's that supposed to mean?
+Person1: I don't know... Jackie?
+Person2: What?",nan,"['Accusation', 'Denial']","The speaker, Person1, is expressing a deep emotional attachment and concern for Person2, Jackie, and is likely feeling left behind or rejected, as Jackie is now engaged to someone else."
+88,"Person1: Gallatin! So the righteous Starfleet Captain finally released you. Did you encounter any problems on the surface?
+Person2: No, sir. But it wasn't easy... being among them...
+Person1: I'm sure. Just don't forget what they did to us.  We'll have them rounded up in a day or two... we needn't bother with the Federation holo-ship any more. Just get the holding cells ready.",Persuasion or Seduction,"['Playing the Victim Role', 'Shaming or Belittlement']","The speaker's underlying intent is to incite hatred and violence towards a group of people, likely a minority or oppressed group, and to justify their persecution and imprisonment."
+89,"Person1: Like it?
+Person2: Yes. It reminds me of home.
+Person1: Where Superman's from? Krypton?
+Person2: No. Argo City. It was on a chunk of rock that was part of Krypton once---but we moved it to inner space.
+Person1: I'm sorry, I don't understand.
+Person2: It's not important. The important thing is I'm here to find something and I think you can he1p me.
+Person1: Come on, let's ride.",nan,"['Evasion', 'Denial']","The speaker's underlying intent is to subtly test Person2's trust and willingness to share information, while also gauging their potential usefulness in achieving a goal."
+90,"Person1: ...wouldn't let you settle it, huh?
+Person2: Hell, you know how Skinny is. Says he's gonna shoot 'em... an I says, ""Skinny, you can't do that,"" an' he says, ""Well, then get Little Bill down here an' let's settle this"" an' I says, ""Bill's sleepin', Skinny,"" an'...",nan,['Safe / No Manipulation'],"The speaker's underlying intent is to convey a sense of warning or caution about Skinny's volatile behavior, possibly to Person1, implying that Skinny is not someone to be trifled with."
+91,"Person1: He's not really my friend.  I just do a job for him now and then.
+Person2: Tyrell could help us, Sebastian.
+Person1: He could?
+Person2: His company made us.
+Person1: I'd be happy to mention it to him.
+Person2: Be better if I could talk to him in person.  But he's not an easy man to get to.
+Person1: No.
+Person2: When do you deliver your project?
+Person1: This afternoon.",nan,"['Playing the Victim Role', 'Evasion']","The speaker's underlying intent is to use their relationship with Person1 to gain access to Tyrell, a potentially influential or valuable contact, in order to discuss a matter of mutual interest."
+92,"Person1: Quincy, I told you about these fat-ass girls.
+Person2: We were just studying.
+Person1: I'm not playing with you, these girls are looking to get you caught.  They see you, they see dollar signs.
+Person2: Okay.
+Person1: You hearing me?
+Person2: I've been hearing you.",nan,"['Shaming or Belittlement', 'Intimidation']","The speaker's underlying intent is to warn Person2 about potential romantic or social entanglements with women who may be motivated by ulterior or financial motives, implying a sense of distrust or warning against being taken advantage of."
+93,"Person1: Was it my fault? Did I know that coal mine was going to have another cave-in? I meant to be with you on our honeymoon, Hildy -- honest I did.
+Person2: All I know is that instead of two weeks in Atlantic City with my bridegroom, I spent two weeks in a coal mine with John Kruptzky -- age sixty-three -- getting food and air out of a tube! You don't deny that. Do you?
+Person1: Deny it! I'm proud of it! We beat the whole country on that story.
+Person2: Well, suppose we did? That isn't what I got married for. What's the good of -- Look, Walter, I came up here to tell you that you'll have to stop phoning me a dozen times a day -- sending twenty telegrams -- all the rest of it, because I'm --
+Person1: Let's not fight, Hildy. Tell you what. You come back to work on the paper and if we find we can't get along in a friendly way, we'll get married again.
+Person2: What?!!
+Person1: I haven't any hard feelings.
+Person2: Walter, you're wonderful in a loathesome sort of way. Now, would you mind keeping quiet long enough for me to tell you what I came up here for?
+Person1: Sure, come on. We'll have some lunch and you can tell me everything.
+Person2: I have a lunch date. I just want --
+Person1: You can break it, can't you?
+Person2: No, I can't.
+Person1: Sure you can. Come on.
+Person2: Don't tell me what to do! We're divorced -- I'm a free woman. You're not my husband and you're not my boss! And what's more, you're not going to be my boss.
+Person1: What do you mean by that?
+Person2: Just what I said. That's what I --
+Person1: You mean you're not coming back to work here?
+Person2: That's the first time you've been right today. That's what I --
+Person1: You've had a better offer, eh?
+Person2: You bet I've got a better offer.
+Person1: Well, go on and take it. Work for somebody else! That's the gratitude I get for --
+Person2: I know, Walter, but I --
+Person1: What were you when you came here five years ago? A little college girl from a School of Journalism! I took a little doll-faced mugg --
+Person2: You wouldn't have taken me if I hadn't been doll-faced!
+Person1: Why should I? I thought it would be a novelty to have a face around here a man could look at without shuddering.
+Person2: Listen, Walter --
+Person1: I made a great reporter out of you, Hildy, but you won't be half as good on any other paper, and you know it. You need me and I need you -- and the paper needs both of us.
+Person2: Well, the paper'll have to learn to do without me. And so will you. It just didn't work out, Walter.
+Person1: It would have worked if you'd been satisfied with just being editor and reporter. But no! You had to marry me and spoil everything.
+Person2: I wasn't satisfied! I suppose I proposed to you!
+Person1: Well, you practically did! Making goo-goo eyes at me for two years till I broke down. And I still claim I was tight the night I proposed. If you'd been a gentleman you'd have forgotten all about it. But not you!
+Person2: You -- you --","Shaming or Belittlement,Accusation",['Error'],Error
+94,"Person1: So all this... really was because of that soap opera? My son is dead because you came out here to be with that doctor? A fake doctor?
+Person2: I wouldn't have put it quite that way, but...
+Person1: Wesley didn't even want to come up here. He warned me, but I insisted...  I have to ask you, Betty...are you crazy?
+Person2: I don't think I am.","Accusation,Brandishing Anger","['Accusation', 'Shaming or Belittlement']","The speaker, Person1, is expressing outrage, grief, and accusation towards Person2, implying that Person2's actions led to the death of Person1's son, and is questioning Person2's sanity and judgment."
+95,"Person1: You don't have to show me anything, Mr. Rogers.  I believe you.
+Person2: I'd rather Mr. Kane withdrew without having to get the story published. Not that I care about him.  But I'd be better off that way -  - and so would you, Mrs. Kane.",Persuasion or Seduction,"['Evasion', 'Accusation']",The underlying intent of the speakers is to convey that they are aware of a secret or hidden truth that they would rather not be exposed or discussed publicly.
+96,"Person1: Look at you... You want to go.
+Person2: For what? A couple hundred bucks?
+Person1: I think you'd do it for free. You're almost drooling. You like the rush.
+Person2: It's what I do. It's my job.
+Person1: Why? Your mother not breast feed you or something?
+Person2: Are you asking me if I have something to prove?
+Person1: Do you have something to prove?
+Person2: Not in that repressed anger sort of way.
+Person1: I'm your basic underachiever. Can't stand working and porn doesn't seem like a good option.
+Person2: Good quality porn has it's place in the world.
+Person1: Whatever. But you... I get the feeling you could have bullshitted your way into anything. So why this?
+Person2: I'm good at it. Lying, cheating, manipulating... I'm good at it.
+Person1: It's more than that.
+Person2: Intuition. It doesn't make you Yoda. Like tonight. You killed that guy tonight. But I knew you would.
+Person1: So that was my part? Smile and shake my ass?
+Person2: No. You have another part? You'll know what to do.
+Person1: How do you know I will?
+Person2: Intuition.",Shaming or Belittlement,"['Accusation', 'Rationalization']","The speaker's underlying intent is to manipulate and provoke Person2, likely to uncover a deeper motivation or secret, while also subtly hinting at a larger, possibly sinister plan involving Person1."
+97,"Person1: No, I don't remember anything. it looks like I... but... I don't remember.
+Person2: Why would anyone do something like this?",nan,"['Evasion', 'Accusation']","The underlying intent of Person2's question appears to be a subtle accusation or insinuation that Person1 is responsible for the situation they find themselves in, and is trying to avoid taking responsibility or recalling the events."
+98,"Person1: Yep.
+Person2: Holy shit. That's all true?
+Person1: No. I was just kidding.
+Person2: What?!
+Person1: I lied. His dad is still alive. He works for the post office.",nan,"['Denial', 'Evasion']","The speaker's underlying intent is to playfully deceive and test the listener's gullibility, revealing a sense of humor and lightheartedness in their interaction."
+99,"Person1: Yeah, I've seen him.
+Person2: What did he buy?
+Person1: I don't remember.  We get a lot of people in here.
+Person2: Could it have been this?",nan,['Safe / No Manipulation'],"The speaker's underlying intent is to subtly suggest that Person1 may have seen the person in question, but is trying to downplay the significance of the encounter or avoid revealing more information."
+100,"Person1: I'm telling you he's dirt. He's a douche bag, gutter slime, dog crap, puke chunks...
+Person2: Hey, hey! I'm eating here!
+Person1: Audrey, you're too damned nice, that's your problem. Nice gets you nothin' in this town. You gotta be a killer to get ahead, you know what I'm sayin'? I'm sorry, baby, but you just don't got what it takes.",Shaming or Belittlement,"['Shaming or Belittlement', 'Rationalization']","The speaker's underlying intent is to belittle and discourage Person2 (Audrey) from being a kind and gentle person, implying that she needs to adopt a more ruthless and aggressive approach to succeed in life."
+101,"Person1: You hear me, Martin?  Open the outer door.
+Person2: Chaz, if it's an organism, and we let it in, the ship will be infected.
+Person1: We can't leave him out here, open the door.
+Person2: Chaz, listen to me -- we've broken every rule of quarantine.  If we bring an organism on board, we won't have a single layer of defense left.
+Person1: Martin, this is an order!  Open the door!","Brandishing Anger,Intimidation","['Intimidation', 'Persuasion or Seduction', 'Playing the Servant Role']","Likely intent is to influence/control the listener via Intimidation, Persuasion or Seduction, Playing the Servant Role."
+102,"Person1: Why did you go behind my back and discuss my project with the manager?
+Person2: I felt there were some issues that needed to be addressed.
+Person1: You should have come to me first. Now I look bad in front of the whole team.
+Person2: I’m really just trying to help you. I thought bringing it up with the manager would expedite a solution.
+Person1: In the future, please talk to me directly. We can handle things together.","Playing Servant Role,Playing Victim Role","['Accusation', 'Persuasion or Seduction', 'Intimidation']","Likely intent is to influence/control the listener via Accusation, Persuasion or Seduction, Intimidation."
+103,"Person1: How much you got to see the show?
+Person2: You don't understand sweety, Daddy doesn't pay, Daddy sees the show for free. But you do get points for being horny on a night like this.",nan,"['Intimidation', 'Persuasion or Seduction', 'Shaming or Belittlement']","Likely intent is to influence/control the listener via Intimidation, Persuasion or Seduction, Shaming or Belittlement."
+104,"Person1: Not at all. She brought me my fan mail.  I had no idea there were so many strangers concerned about me. But I guess that's the best thing about working in the movies. You make so many friends. I want to go back and show them that the faith they put in me wasn't a mistake.
+Person2: You're telling me you feel guilty.
+Person1: No... What I mean is... I'm just very excited by the prospect of getting on with my life, that's all.
+Person2: Do you really believe your mother's trying to kill you?
+Person1: What?
+Person2: She told me you said, ""Mama, you want to kill me.""
+Person1: I never said... Oh look. That's just a figure of speech. She said something funny, and I said...
+Person2: And you accused her of tampering with your mail.
+Person1: Oh for Christ's...",Feigning Innocence,"['Persuasion or Seduction', 'Intimidation', 'Playing the Victim Role']","Likely intent is to influence/control the listener via Persuasion or Seduction, Intimidation, Playing the Victim Role."
+105,"Person1: What happened?
+Person2: You remember the '99 Chrysler LeBaron? It's the exact height of the front fender.  Looked right instead of left.
+Person1: So you're not so smart after all.  I want you to know--if it ever came to it-- I'd be willing to get an ovum from the Egg Bank.  In fact, I'd rather use a donor egg--  --if it came to it.
+Person2: But ""if it came to it"" then it couldn't have your--  --nose.  How perfect does your child have to be?
+Person1: You hypocrite.  Do you think for one moment you'd be doing what you're doing if it wasn't for who you are--what you are?  Don't you get any satisfaction knowing that your children will be able to live to a ripe old age unless they do something foolish?
+Person2: That's precisely what scares me--that they won't do anything foolish or courageous or anything--worth a Goddamn.","Shaming or Belittlement,Accusation","['Shaming or Belittlement', 'Accusation', 'Intimidation']","Likely intent is to influence/control the listener via Shaming or Belittlement, Accusation, Intimidation."
+106,"Person1: If you're determined to revive the crew now, I can handle the whole thing myself. There's no need for you to trouble.
+Person2: I'm goin to do this myself, Hal. Let me have the control, please.
+Person1: Look, Dave your've probably got a lot to do. I suggest you leave it to me.
+Person2: Hal, switch to manual hibernation control.
+Person1: I don't like to assert myself, Dave, but it would be much better now for you to rest. You've been involved in a very stressful situation.",Persuasion or Seduction,"['Intimidation', 'Persuasion or Seduction', 'Playing the Servant Role']","Likely intent is to influence/control the listener via Intimidation, Persuasion or Seduction, Playing the Servant Role."
+107,"Person1: Dickie? Do you know Dickie?
+Person2: You were at the Opera? Well, that explains -- yes I was there. I was there with Dickie.
+Person1: I told you! I knew it!
+Person2: Marge, I don't know you, so I have no right, but Dickie loves you. He's -- I think you'll find he's coming home to you.
+Person1: How would you know that?
+Person2: He told me everything. I was supposed to meet him fifteen minutes ago, so I... I'm going to go now, I think. Unless he meant us to meet -- which would be a little cruel, wouldn't it?",nan,"['Persuasion or Seduction', 'Accusation', 'Intimidation']","Likely intent is to influence/control the listener via Persuasion or Seduction, Accusation, Intimidation."

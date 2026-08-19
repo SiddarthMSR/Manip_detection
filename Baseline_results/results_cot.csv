@@ -1,0 +1,6 @@
+Original_Index,Text,True_Label,True_Binary,AI_Predictions,AI_Binary,Reasoning
+0,"Person1: I don't know.
+Person2: Don't go.
+Person1: I have to... he's a G-34
+Person2: You don't have to... I don't trust him.  You ought to file a report.
+Person1: No, don't make trouble.  It's nothing.",Rationalization,1,['Safe / No Manipulation'],0,Person2 is trying to control Person1's actions and is not providing a clear reason for their distrust. Person1 is using denial and rationalization to avoid the situation.

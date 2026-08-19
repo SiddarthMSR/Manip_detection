@@ -1,0 +1,259 @@
+import pandas as pd
+import ast
+import time, os, csv
+from dotenv import load_dotenv
+from transformers import pipeline
+from sklearn.metrics import (
+    accuracy_score,
+    balanced_accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+    hamming_loss,
+    jaccard_score,
+    precision_score,
+    recall_score,
+    zero_one_loss,
+)
+from sklearn.preprocessing import MultiLabelBinarizer
+
+load_dotenv()
+
+# CHANGE THIS FOR EACH RUN: "ZEROSHOT" or "COT"
+MODE = "ZEROSHOT" 
+HF_MODEL_NAME = os.getenv("HF_MODEL_NAME", "facebook/bart-large-mnli")
+OUTPUT_FILE = f"results_{MODE.lower()}.csv"
+INPUT_CSV = "mentalmanip_con_cleaned.csv"
+MAX_ROWS = 1000
+SET_M_TACTICS = ["Denial", "Evasion", "Feigning Innocence", "Rationalization", "Playing the Victim Role", "Playing the Servant Role", "Shaming or Belittlement", "Intimidation", "Brandishing Anger", "Accusation", "Persuasion or Seduction"]
+SAFE_LABELS = {"Safe / No Manipulation", "Safe", "No Manipulation"}
+MANIPULATION_THRESHOLD = 0.52
+TACTIC_THRESHOLD = 0.33
+_classifier = None
+
+
+def get_classifier():
+    global _classifier
+    if _classifier is not None:
+        return _classifier
+
+    try:
+        import torch
+        device = 0 if torch.cuda.is_available() else -1
+    except Exception:
+        device = -1
+
+    _classifier = pipeline(
+        "zero-shot-classification",
+        model=HF_MODEL_NAME,
+        device=device,
+    )
+    print(f"Loaded local HF model: {HF_MODEL_NAME} (device={'cuda' if device == 0 else 'cpu'})")
+    return _classifier
+
+def run_pipeline(text):
+    clf = get_classifier()
+    for _ in range(3):
+        try:
+            gate = clf(
+                text,
+                candidate_labels=["manipulative communication", "non-manipulative communication"],
+                multi_label=False,
+                hypothesis_template="This text is {}.",
+            )
+            gate_scores = dict(zip(gate["labels"], gate["scores"]))
+            manip_score = gate_scores.get("manipulative communication", 0.0)
+            is_manipulative = manip_score >= MANIPULATION_THRESHOLD
+
+            if not is_manipulative:
+                return ["Safe / No Manipulation"], "No clear manipulative intent detected."
+
+            tactic_res = clf(
+                text,
+                candidate_labels=SET_M_TACTICS,
+                multi_label=True,
+                hypothesis_template="This text uses {}.",
+            )
+            scored_tactics = list(zip(tactic_res["labels"], tactic_res["scores"]))
+            preds = [label for label, score in scored_tactics if score >= TACTIC_THRESHOLD][:3]
+            if not preds and scored_tactics and scored_tactics[0][1] >= 0.25:
+                preds = [scored_tactics[0][0]]
+
+            reasoning = (
+                f"manip_score={manip_score:.3f}; "
+                + ", ".join([f"{lbl}={score:.3f}" for lbl, score in scored_tactics[:3]])
+            )
+            return preds if preds else ["Safe / No Manipulation"], reasoning
+        except Exception as e:
+            print(f"[run_pipeline] {type(e).__name__}: {e}")
+            time.sleep(2)
+    return ["Error"], "Error"
+
+
+def detect_text_column(df: pd.DataFrame) -> str:
+    for candidate in ["Dialogue", "dialogue", "text", "Text", "utterance", "Utterance"]:
+        if candidate in df.columns:
+            return candidate
+    raise ValueError(f"No text column found. Available columns: {list(df.columns)}")
+
+
+def detect_label_column(df: pd.DataFrame) -> str:
+    for candidate in ["Technique", "technique", "Label", "label", "class", "Class"]:
+        if candidate in df.columns:
+            return candidate
+    raise ValueError(f"No label column found. Available columns: {list(df.columns)}")
+
+
+def detect_binary_column(df: pd.DataFrame):
+    for candidate in ["Manipulative", "manipulative", "Manipulation", "manipulation", "is_manipulative"]:
+        if candidate in df.columns:
+            return candidate
+    return None
+
+
+def parse_labels(value):
+    if pd.isna(value):
+        return set()
+
+    text = str(value).strip()
+    if not text:
+        return set()
+
+    labels = []
+    if text.startswith("[") and text.endswith("]"):
+        try:
+            parsed = ast.literal_eval(text)
+            if isinstance(parsed, (list, tuple, set)):
+                labels = [str(x).strip() for x in parsed]
+            else:
+                labels = [str(parsed).strip()]
+        except Exception:
+            labels = [s.strip() for s in text.replace("[", "").replace("]", "").replace("'", "").split(",")]
+    else:
+        labels = [s.strip() for s in text.split(",")]
+
+    return {label for label in labels if label and label not in SAFE_LABELS and label != "Error"}
+
+
+def coerce_binary(value):
+    if pd.isna(value):
+        return 0
+    text = str(value).strip().lower()
+    if text in {"1", "true", "yes", "y"}:
+        return 1
+    if text in {"0", "false", "no", "n"}:
+        return 0
+    try:
+        return 1 if int(float(text)) > 0 else 0
+    except Exception:
+        return 0
+
+
+def calculate_metrics(file_path, allowed_indices=None):
+    df = pd.read_csv(file_path)
+
+    if allowed_indices is not None and "Original_Index" in df.columns:
+        idx_series = pd.to_numeric(df["Original_Index"], errors="coerce")
+        df = df[idx_series.isin(allowed_indices)]
+
+    if df.empty:
+        print("No rows available to evaluate.")
+        return
+
+    y_true = df["True_Label"].apply(parse_labels)
+    y_pred = df["AI_Predictions"].apply(parse_labels)
+
+    if "True_Binary" in df.columns:
+        true_bin = df["True_Binary"].apply(coerce_binary)
+    else:
+        true_bin = y_true.apply(lambda x: 1 if any(t in SET_M_TACTICS for t in x) else 0)
+
+    if "AI_Binary" in df.columns:
+        pred_bin = df["AI_Binary"].apply(coerce_binary)
+    else:
+        pred_bin = y_pred.apply(lambda x: 1 if any(t in SET_M_TACTICS for t in x) else 0)
+
+    print("\n" + "=" * 40)
+    print("🛡️ BINARY PERFORMANCE (Manipulation vs Safe)")
+    print(f"Accuracy: {accuracy_score(true_bin, pred_bin):.4f}")
+    print(f"Balanced Accuracy: {balanced_accuracy_score(true_bin, pred_bin):.4f}")
+    print(f"Precision: {precision_score(true_bin, pred_bin, zero_division=0):.4f}")
+    print(f"Recall: {recall_score(true_bin, pred_bin, zero_division=0):.4f}")
+    print(f"F1: {f1_score(true_bin, pred_bin, zero_division=0):.4f}")
+
+    tn, fp, fn, tp = confusion_matrix(true_bin, pred_bin, labels=[0, 1]).ravel()
+    specificity = tn / (tn + fp) if (tn + fp) else 0.0
+    print(f"Specificity: {specificity:.4f}")
+    print("Confusion Matrix [rows=true, cols=pred]:")
+    print(confusion_matrix(true_bin, pred_bin, labels=[0, 1]))
+    print("\nDetailed Report:")
+    print(classification_report(true_bin, pred_bin, target_names=["Safe", "Manipulative"]))
+
+    print("🎯 MULTI-LABEL PERFORMANCE (Set M tactics)")
+    mlb = MultiLabelBinarizer(classes=SET_M_TACTICS)
+    y_true_bin = mlb.fit_transform(y_true)
+    y_pred_bin = mlb.transform(y_pred)
+
+    subset_acc = 1.0 - zero_one_loss(y_true_bin, y_pred_bin)
+    print(f"Subset Accuracy (Exact Match): {subset_acc:.4f}")
+    print(f"Hamming Loss: {hamming_loss(y_true_bin, y_pred_bin):.4f}")
+    print(f"Jaccard (samples): {jaccard_score(y_true_bin, y_pred_bin, average='samples', zero_division=0):.4f}")
+    print(f"Jaccard (micro): {jaccard_score(y_true_bin, y_pred_bin, average='micro', zero_division=0):.4f}")
+    print(f"Jaccard (macro): {jaccard_score(y_true_bin, y_pred_bin, average='macro', zero_division=0):.4f}")
+    print(f"Precision (micro): {precision_score(y_true_bin, y_pred_bin, average='micro', zero_division=0):.4f}")
+    print(f"Recall (micro): {recall_score(y_true_bin, y_pred_bin, average='micro', zero_division=0):.4f}")
+    print(f"F1 (micro): {f1_score(y_true_bin, y_pred_bin, average='micro', zero_division=0):.4f}")
+    print(f"Precision (macro): {precision_score(y_true_bin, y_pred_bin, average='macro', zero_division=0):.4f}")
+    print(f"Recall (macro): {recall_score(y_true_bin, y_pred_bin, average='macro', zero_division=0):.4f}")
+    print(f"F1 (macro): {f1_score(y_true_bin, y_pred_bin, average='macro', zero_division=0):.4f}")
+    print("\nPer-label report:")
+    print(classification_report(y_true_bin, y_pred_bin, target_names=SET_M_TACTICS, zero_division=0))
+    print("=" * 40 + "\n")
+
+def main():
+    df = pd.read_csv(INPUT_CSV)
+    df = df.head(MAX_ROWS).copy()
+
+    text_col = detect_text_column(df)
+    label_col = detect_label_column(df)
+    binary_col = detect_binary_column(df)
+    subset_indices = set(df.index.tolist())
+
+    processed_indices = set()
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            out_df = pd.read_csv(OUTPUT_FILE)
+            if "Original_Index" in out_df.columns:
+                parsed_idx = pd.to_numeric(out_df["Original_Index"], errors="coerce").dropna().astype(int)
+                processed_indices = set(parsed_idx[parsed_idx.isin(subset_indices)].tolist())
+        except pd.errors.EmptyDataError:
+            pass
+
+    remaining = df[~df.index.isin(processed_indices)]
+    print(f"Running {MODE} on first {MAX_ROWS} rows: {len(remaining)} rows left.")
+
+    with open(OUTPUT_FILE, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if not processed_indices:
+            writer.writerow([
+                "Original_Index",
+                "Text",
+                "True_Label",
+                "True_Binary",
+                "AI_Predictions",
+                "AI_Binary",
+                "Reasoning",
+            ])
+
+        for idx, row in remaining.iterrows():
+            preds, reasoning = run_pipeline(str(row[text_col]))
+            ai_binary = 1 if any(t in SET_M_TACTICS for t in preds) else 0
+            true_binary = coerce_binary(row[binary_col]) if binary_col else (1 if len(parse_labels(row[label_col])) > 0 else 0)
+            writer.writerow([idx, row[text_col], row[label_col], true_binary, preds, ai_binary, reasoning])
+            f.flush()
+            print(f"Row {idx} | Actual: {row[label_col]} | Preds: {preds}")
+
+    calculate_metrics(OUTPUT_FILE, allowed_indices=subset_indices)
+
+if __name__ == "__main__":
+    main()
