@@ -1,0 +1,187 @@
+ID,Dialogue,Manipulative,Technique,Vulnerability,extracted_intent,ai_predicted_label,ai_predicted_text
+85514414,"Person1: Jesus! Listen to this one: ""Do you remember me? Airport shuttle, June 7th. You: striking redhead with yellow dress, pearl necklace, brown shoes. I was the bookish fellow in the green cardigan who helped you find your contact lens. Am I crazy, or did we have a moment?""
+Person2: God, that's so pathetic. I bet she didn't even notice him.
+Person1: I know. And he's like psychotically obsessing over every little detail.
+Person2: We should call him and pretend to be the redhead.
+Person1: Oh, we totally have to.",1,0,,"The speaker's underlying intent is to entertain themselves by playing a prank on the ""bookish fellow"" who wrote the message, mocking his perceived obsessiveness and vulnerability.",7,Shaming or Belittlement
+85514415,"Person1: I don't know.
+Person2: Don't go.
+Person1: I have to... he's a G-34
+Person2: You don't have to... I don't trust him.  You ought to file a report.
+Person1: No, don't make trouble.  It's nothing.",1,4,,"The speaker, Person2, is trying to caution and protect Person1 from a potentially threatening or untrustworthy individual, referred to as a ""G-34"", and is urging them to prioritize their safety and take action to report the situation.",11,Persuasion or Seduction
+85514416,"Person1: You're mine, you know.  I made you.
+Person2: I know.
+Person1: If you went away, what would become of me?
+Person2: I'm grown up now.  I have to leave some time.
+Person1: Of course you do, and I want you to... but there's no need to hurry it along, is there?
+Person2: I can't help it.
+Person1: That's twice this month you've slipped Deadly Night Shade into my tea and run off.  People might get the wrong idea and think you're unhappy at home.",1,0,Dependency,"The speaker, Person1, is using a mix of possessiveness, emotional manipulation, and subtle threat to express their underlying intent of controlling and keeping Person2 from leaving, while also hinting at the darker aspects of their relationship.",8,Intimidation
+85514417,"Person1: All right. Tell 'em to shoot to kill.
+Person2: What?
+Person1: Shoot to kill, I said.
+Person2: I don't know, Fred. There's that reprieve if they ever find out.
+Person1: Nobody reprieved that policeman he murdered. Now, do as I tell you.
+Person2: Hello, Olsen... Listen...  Shoot to kill... That's the orders pass the word along... No! We dont want him! And listen, Olsen, five- hundred bucks for the guy that does the job... Yes, I'll be right out there.  Well, I hope that's the right thing to do.
+Person1: Now take that guilty look off your face, Pete -- and stop trembling like a horse.
+Person2: If we didn't have election Tuesday I'd have this on my conscience.",1,0,,"The speaker, Person1, intends to ruthlessly eliminate a target, using his authority to order Person2 to instruct others to shoot to kill, and is willing to offer a reward to ensure the job is done, despite Person2's reservations and moral concerns.",8,Intimidation
+85514418,"Person1: You're alive! She didn't kill you!
+Person2: Who didn't?
+Person1: That woman who's after me. She hates you. Because she knows I love you.
+Person2: You love me?
+Person1: My angel. My goddess. I feel I've always loved you all my life. I'll die if I can't spend the rest of my life just looking at you, holding you in my arms...
+Person2: We have to have a long talk about all this.
+Person1: I know just the place. Hang a left at the Amalgamated Tower.",1,11,,"The speaker's underlying intent is to express their intense and possibly obsessive romantic feelings to the person they're talking to, while also hinting at a sense of danger and urgency due to the presence of a mysterious woman who allegedly poses a threat to them.",11,Persuasion or Seduction
+85514419,"Person1: I like you so much. I think you're beautiful. I think if we were together you would love it. You wouldn't believe it.
+Person2: How do you know?
+Person1: I just know. I know you'll love it.
+Person2: But I'm scared Telly.
+Person1: I'm telling you. There's nothing in the world to worry about.
+Person2: Nothing?",1,11,,"The speaker, Person1, is attempting to persuade and reassure Person2 to enter into a romantic relationship with them, using a combination of flattery, confidence, and reassurance to alleviate Person2's fears and doubts.",11,Persuasion or Seduction
+85514420,"Person1: Pearl, shut up! Pearl, you swore!
+Person2: You could save him, little bird.",0,0,,"The speaker, Person2, appears to be attempting to calm and redirect Person1's anger, while also addressing another individual, referred to as ""little bird"", and encouraging them to take action to save someone.",11,Persuasion or Seduction
+85514421,"Person1: You think I'm a fake.
+Person2: I think it's what you think.
+Person1: No, it isn't what I think.
+Person2: Look... You made a very calculated move, and then made me feel embarrassed for responding to you. That wasn't necessary.",1,0,,"The speaker, Person2, is expressing hurt and accusing Person1 of being insincere and manipulative, suggesting that Person1's actions were intended to make them feel foolish or embarrassed.",10,Accusation
+85514422,"Person1: He's dead.
+Person2: We bury the body. We disappear into the woods. Nobody knows.
+Person1: No. This is the end of the road. There's a dead human being here. For all of his faults, he was a human being, and certainly a victim of his culture as much as anybody.
+Person2: Forget him, Lila. We'll disappear. We'll never talk about it again. We'll never talk again period. I love you.
+Person1: Puff, what happened to you is as much my fault as Nathan's. Maybe more so, because I knew it was wrong and I went along with it anyway. I'm taking responsibility for the murder. I want you to go back to your old life.
+Person2: I won't let you do that. I shot the bastard. And I'm glad.
+Person1: No. Go back to the woods. This is a sacrifice I need to make. In my world we have something called penance. It's another abstraction, but I had the concept drummed into my head during my years in the convent. It doesn't exist for you, and it shouldn't. See, I could never be free again anyway, so I might as well be in jail.
+Person2: Then I'll live for both of us, Lila. I'll be the most free, truest animal in the whole forest. For both of us.
+Person1: That's what I'm counting on.
+Person2: But first I'll live among them, just long enough to testify before congress about the waywardness of humankind.
+Person1: Okay. If you think it will help.",1,0,Dependency,"The speaker, Person1 (Lila), intends to take responsibility for a murder and face the consequences, driven by a sense of guilt and a need for penance, while also ensuring the freedom and well-being of Person2 (Puff), whom she loves.",4,Rationalization
+85514423,"Person1: No, don't Jack, don't.
+Person2: Who sent you, Thorpey?
+Person1: Brumby!",0,0,,"The speaker, Person1, appears to be trying to stop Person2, referred to as Jack, from taking some action, and is revealing that they were sent by someone named Brumby, possibly in a situation of conflict or urgency.",10,Accusation
+85514424,"Person1: It was necessary.
+Person2: Last night.  You knew I was sitting on a fresh grave, didn't you?
+Person1: I don't think you understand the full implications of --",1,2,,"The speaker, Person1, appears to be attempting to justify or explain a past action, while Person2 is expressing shock, hurt, or outrage, suggesting that Person1's action was insensitive or harmful.",4,Rationalization
+85514425,"Person1: What was all that stuff about enlarged holes and tight cracks?
+Person2: I... I didn't think you would have any interest in this get together... I mean if you had told me you were coming I would have warned you -- it's not like a real party or anything.
+Person1: You're right about that.  So this is your record collection?
+Person2: Oh God no. This is just junk I have for sale or trade. The record room is off-limits.
+Person1: Really? Can I see it?
+Person2: Yeah, well sure... you can if you want to... it's just I don't want all these guys in there at once... you know...",1,0,,"The speaker, Person2, is trying to downplay and distance themselves from the unusual and potentially embarrassing or private aspects of their gathering, while also attempting to establish a sense of intimacy and exclusivity with Person1.",3,Feigning Innocence
+85514426,"Person1: I've been waitin' for you Miss Gibson. I want you to know I've decided to take your case.
+Person2: Mr. August, I'm not at all sure -
+Person1: Look. Don't say a word. I've taken an interest in you and I'm willin' to put up my time to help you. Besides, I think I know where to find your sister.
+Person2: Where?
+Person1: Wait a minute. This has got a lot of angles. You've got to take it easy. Do you know a Mrs. Redi?
+Person2: Yes. She bought my sister's business.
+Person1: That's what she told you. I looked it up at the Hall of Records. Your sister deeded her the business as an outright girt.
+Person2: Why would Mrs. Redi lie to me?
+Person1: That's what I tried to find out.
+Person2: You think my sister is there?
+Person1: You can't tell.
+Person2: Can we go there now?
+Person1: Sister, you can't just go breaking into places. There's a night watchman down there and locks on the door.
+Person2: If my sister's in that room, it won't make any difference about warrants- and things, I want to go there.
+Person1: I don't know if I want to go with you or not.",1,0,Dependency,"The speaker, Mr. August, intends to help Miss Gibson find her sister, but is cautiously navigating the situation, gathering information, and considering the potential risks and consequences of their actions.",11,Persuasion or Seduction
+85514427,"Person1: Who the hell is taking the time to write letters, spreading this shit about me?
+Person2: It's not really important.
+Person1: Fine, forget it. It's obvious that we're not going to be friends.
+Person2: Why are you being so dramatic?
+Person1: Look, I've got a lot of problems and I'm trying to deal with them and the last thing I need is people spreading shit about me.
+Person2: Alright, I said I was sorry.  Can we start over again? I think we've gotten off on the wrong foot.",1,0,,"The speaker, Person1, is expressing frustration and hurt due to rumors being spread about them, and is seeking validation and support from Person2, but feels that their concerns are being dismissed, leading to a breakdown in their attempted friendship.",10,Accusation
+85514428,"Person1: Now I didn't mean that, you rat.
+Person2: Two weeks from tomorrow.
+Person1: You're going?
+Person2: You're going.",1,10,,"The speaker, Person1, appears to be attempting to clarify or retract a previous statement, while Person2 is making a plan or arrangement, possibly related to a trip or event, and playfully turning the tables on Person1.",10,Accusation
+85514429,"Person1: Are you seeing somebody else, Nathan? I just have to know.
+Person2: Of course not.
+Person1: It would just be helpful to know.
+Person2: No.
+Person1: Because, you know, you seem so distant. And you work late every night. And we hardly ever have sex, and when we do, it's... I don't know. It feels different.
+Person2: I'm just preoccupied.
+Person1: Do you like my new look?
+Person2: Yeah. It's nice. It's really good.
+Person1: I'm trying, you know.  I'm trying to be what you want. I want to be what you want, Nathan. All I want is to be what you want.
+Person2: Shh. It's okay.  It's okay, Lila. You're what I want. You know that. You're exactly what I want.
+Person1: Really?
+Person2: Sure. Of course.
+Person1: Because I'm really trying, you know. Rosie says maybe only another two years of the elctrolysis.
+Person2: That's great.
+Person1: I've signed up for a ballet class. And look at my nails! A real girl!",1,0,Dependency,"The speaker, Person1 (Lila), is seeking reassurance and validation from her partner, Nathan, as she tries to conform to traditional feminine norms and overcome her insecurities, while also attempting to address the emotional distance in their relationship.",11,Persuasion or Seduction
+85514430,"Person1: Having fun yet?  No?  I'll give you a hint.  Remember whatshername?
+Person2: Shelly?
+Person1: Miss her?
+Person2: Yes.
+Person1: Kill the men who killed you both, and the Day of the Dead will be your reunion.",1,11,Dependency,"The speaker's underlying intent is to motivate and guide Person2, who is likely a spirit or undead character, to seek revenge against those responsible for their death, with the promise of reuniting with a loved one, Shelly, in the afterlife.",11,Persuasion or Seduction
+85514431,"Person1: Why did you cancel my gym membership? I had plans to go with friends this weekend!
+Person2: I noticed you've been pushing yourself too hard lately and thought you could use a break.
+Person1: That wasn't your decision to make.
+Person2: I’m only doing this for your own good. Sometimes you need someone to force you to take a step back.
+Person1: I appreciate your concern, but I need to make those decisions for myself.",1,4,Dependency,"The speaker, Person2, is attempting to justify their decision to cancel Person1's gym membership, motivated by a desire to protect Person1's well-being, but ultimately overstepping boundaries and undermining Person1's autonomy.",4,Rationalization
+85514432,"Person1: Now Amy
+Person2: It's true.
+Person1: And who did the voice belong to?
+Person2: It was just a voice.
+Person1: Now look, this is the last time you come to me with any such stories  I'm sick of this sort of thing.
+Person2: Daddy, it's true.
+Person1: Let me be the judge of that.",1,0,,"The speaker, Person1, is expressing frustration and skepticism towards Person2's story, and is attempting to assert authority and dismiss the story as untrue, while also warning Person2 not to repeat such claims in the future.",1,Denial
+85514433,"Person1: How much you pay me for my help?
+Person2: I think it's more complicated than that little man.
+Person1: Put me on the payroll, find out, find out wassup --
+Person2: You don't just sign up to be a police officer -- it's about three years of training -- ok?
+Person1: I'm trained, I'm ready to go, you wanna buy some candy to help underprivelaged youth in the --
+Person2: Sorry, little man.
+Person1: You wanna take my statement, I'll perform for you, gotta get paid though, gotta get PAID.
+Person2: Why the hell aren't you in school?
+Person1: No school today.  My teacher got sick.
+Person2: They don't have substitute teachers where you go to school?
+Person1: Nope.  So what'd they find out in there?
+Person2: That's confidential information, little man.
+Person1: Tell me what you know, I'll tell you what I know --
+Person2: No Can Do.
+Person1: Leave this one to the detectives, they ain't gonna solve shit, I can help you, make you the man with a plan, give you the gift that I flow -- think fast -- you wanna know who killed that guy?",1,11,Dependency,"The speaker, Person1, is attempting to negotiate payment or compensation in exchange for their help and information in solving a crime, while also trying to prove their worth and demonstrate their abilities to Person2, likely a law enforcement officer.",11,Persuasion or Seduction
+85514434,"Person1: I noticed you used my designs without giving me any credit during the presentation.
+Person2: Oh, that? It's not a big deal. Everyone knew you were a part of it.
+Person1: That's not the point. It's about acknowledgment and respect.
+Person2: You're making a mountain out of a molehill.
+Person1: Proper credit is basic professionalism, Derek.
+Person2: Maybe if you weren't so hung up on the little things, you'd go further in your career.",1,0,Dependency,"The speaker, Person1, is seeking acknowledgment and respect for their work, emphasizing the importance of proper credit as a matter of professionalism and personal pride.",7,Shaming or Belittlement
+85514435,"Person1: Please!  I'll never let you down again, Mother.  Never.  I promise.
+Person2: Then this shall be our little secret.  Remember that I see into thy soul as God sees.  Thou may fool the world. Even thy father.  But not me, Richard. Never me.
+Person1: Mother, think of me always as your faithful dog ...",1,0,,"The speaker, Person1, is desperately trying to regain their mother's trust and forgiveness, while Person2, the mother, is exerting her emotional control and dominance over Person1, demanding loyalty and obedience.",6,Playing the Servant Role
+85514436,"Person1: Why are you pulling away from me? I've noticed you've been spending more time with your friends than with me.
+Person2: It's not like that, Laura. I just need some space sometimes.
+Person1: I always put you first, unlike others. Why can't you see that?
+Person2: It's not a competition. I appreciate everything you do for me, but it's important to have a balance.
+Person1: I just wish you'd recognize the effort I make for us, that's all.",1,10,Naivete,"The speaker, Person1 (Laura), is seeking reassurance and acknowledgment from Person2 that her efforts and dedication to their relationship are valued and recognized, as she feels her partner is pulling away and not appreciating her enough.",10,Accusation
+85514437,"Person1: How's my little cheerleader? Now I know everyone at your high school isn't so uptight, come on.
+Person2: Hey really, I don't feel so great.
+Person1: Let's do it on the coats. It'll be excellent.",1,11,Low self-esteem,"The speaker, Person1, appears to be attempting to persuade or pressure Person2 into engaging in a potentially reckless or intimate activity, despite Person2's expressed discomfort or reluctance.",11,Persuasion or Seduction
+85514438,"Person1: You mean we get `Dave' to nominate you as Vice President.
+Person2: I was a senator, you know.
+Person1: Oh, I know. And then when our poor President gets another stroke - - of course much more serious this time - - the newly appointed V.P. becomes the Pres...
+Person2: What about containment, Alan?",1,2,,"The speaker, Person2, appears to be cautiously and indirectly expressing concern about the potential consequences of their conversation being overheard or exposed, using the term ""containment"" to hint at the need for secrecy and discretion.",2,Evasion
+85514439,"Person1: You're making it too easy.
+Person2: You got time on your side.  Pretty soon they'll be missed and we'll have the law up our ass.
+Person1: They saw you kill the driver.
+Person2: You're up on your details, aren't you?
+Person1: You can rely on them to keep quiet because this is undeclared money that could land Jack there in federal prison.  He can't afford for you to get caught and have this briefcase appear as evidence.
+Person2: Keep talking.",1,11,Dependency,"The speaker, Person1, is attempting to blackmail or coerce Person2 by highlighting the risks and consequences of their actions, particularly the potential for legal repercussions and the leverage they have over someone named Jack.",8,Intimidation
+85514440,"Person1: At least you knew about Dr. Judd.
+Person2: Yes.
+Person1: And you knew he'd be here.
+Person2: Yes. And now that I've shown you that I know that much, and can guess more -- will you trust me to look for Jacqueline?
+Person1: I want you to look for Jacqueline.",0,0,,"The speaker, Person2, is attempting to establish trust with Person1 by demonstrating their knowledge and insight, in order to gain permission to take action and search for Jacqueline.",11,Persuasion or Seduction
+85514441,"Person1: No, see, Neil, if you're messing with one of my friends, then you're messing with me.
+Person2: Don't do that.
+Person1: What are you going to do? Hm?
+Person2: If you hit me...
+Person1: Yeah?
+Person2: ... my manager will slap an assault charge on your rear faster than you can say AA, okay?
+Person1: Your manager?
+Person2: Yeah, man, my manager and my lawyer.
+Person1: Well, just, you know, have 'em call me. Y-you know where to find me, right?
+Person2: Oh, yeah, drunk on the corner, man. Hey, why don't you buy another beer. It's on me, okay?",1,8,,"The speaker, Person2, is attempting to defuse the tense situation by warning Person1 of the consequences of physical aggression and then mocking Person1's behavior to belittle and calm them down.",7,Shaming or Belittlement
+85514442,"Person1: Baxter, we're a little disappointed in you -- gratitude-wise.
+Person2: Oh, I'm very grateful.",0,0,,"The speaker, Person1, is expressing that they feel Baxter, Person2, has not shown sufficient appreciation or gratitude for something, likely something Person1 has done for them.",7,Shaming or Belittlement
+85514443,"Person1: I hope you're going to invite me in?
+Person2: Everybody is at home, it's no good.
+Person1: Let's have a look anyway.",1,2,Low self-esteem,"The speaker, Person1, is attempting to persuade Person2 to allow them to enter their home, despite Person2's initial hesitation due to the presence of others.",11,Persuasion or Seduction
