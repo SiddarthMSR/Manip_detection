@@ -7,7 +7,7 @@ from google.genai import types
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 
 # API Key Setup
-api_key = "AIzaSyBm005IxbipfAIe1AnMBxXEOkjzLZA6TbI" # Replace with your Google API key
+api_key = API_KEY # Replace with your Google API key
 client = genai.Client(api_key=api_key)
 
 gemini_model = "gemini-2.0-flash-lite"
