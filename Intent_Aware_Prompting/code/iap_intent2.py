@@ -5,7 +5,7 @@ from google import genai
 from google.genai import types
 
 # API Key Setup
-api_key = "AIzaSyBm005IxbipfAIe1AnMBxXEOkjzLZA6TbI" # Replace with your Google AI Studio API key
+api_key = API_KEY # Replace with your Google AI Studio API key
 client = genai.Client(api_key=api_key)
 
 # Model Selection
