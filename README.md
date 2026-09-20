@@ -101,18 +101,20 @@ The experiments show that:
 
 ## Results
 
-The main reported results are summarized below. The zero-shot values were recalculated from `Baseline_results/results_zeroshot.csv`; the other values are reported in `Reports/End_term_presentation.pdf`.
+The repository contains results from several experiments, but they are not complete or directly comparable because they use different models, dataset versions, and evaluation sizes. The available findings are:
 
-| Approach | Evaluation | Accuracy | Precision | Recall | F1 | Main observation |
-|---|---:|---:|---:|---:|---:|---|
-| Zero-shot NLI | Binary, 433 examples | 59.8% | 64.7% | 80.3% | 71.7% | Good recall, but many false positives |
-| Sentiment + pragmatic features | Binary | Not reported | 81% manipulative | 72% manipulative | 76% manipulative | Weaker on non-manipulative dialogue: F1 56% |
-| Sentiment + pragmatic features | Technique classification | 34% | - | - | - | Poor performance on minority techniques |
-| Contrastive mirror prompting | Binary | 62% | 81% manipulative | Not reported | Not reported | Non-manipulative precision was only 43% |
+- The stored zero-shot NLI evaluation contains 433 examples and achieved approximately 59.8% accuracy, 64.7% precision, 80.3% recall, and 71.7% F1 for binary manipulation detection.
+- The zero-shot model had relatively high recall but also produced many false positives, especially on emotionally intense or ambiguous dialogue.
+- The sentiment and pragmatic feature experiment reported 76% F1 for the manipulative class and 56% F1 for the non-manipulative class.
+- The same sentiment-augmented approach reported approximately 34% accuracy for technique classification and struggled with under-represented techniques.
+- The contrastive mirror-prompting experiment reported approximately 62% binary accuracy and 81% precision for the manipulative class. Its precision for non-manipulative dialogue was approximately 43%, indicating over-detection.
+- The project presentations report that intent-aware prompting performed better than the compared zero-shot and multi-shot prompting configurations in the authors' API evaluation.
+- Intent-aware prompting was slower because it requires additional intent-extraction calls: approximately 72.1 minutes versus 26.7 minutes for zero-shot and 36.4 minutes for multi-shot prompting.
+- Tactic-level prediction was much weaker than binary detection. In the stored 433-row zero-shot artifact, exact tactic-set accuracy was approximately 0.5% and micro Jaccard was approximately 12.9%.
+- A separate 108-row local IAP artifact achieved approximately 6.5% exact-match accuracy and 14.7% micro Jaccard.
+- Some experiments are incomplete: for example, `Baseline_results/results_cot.csv` contains only one evaluated row, and several result files are checkpoints or partial runs rather than full benchmark reports.
 
-The intent-aware experiments report that IAP performed better than the compared zero-shot and multi-shot prompting configurations in the authors' API evaluation. Its approximate runtime was 72.1 minutes, compared with 26.7 minutes for zero-shot and 36.4 minutes for multi-shot prompting. The additional cost comes from extracting intent before classification.
-
-The stored multi-label outputs show that tactic-set prediction remains difficult. In the 433-row zero-shot artifact, exact tactic-set accuracy was approximately 0.5%, with micro Jaccard of approximately 12.9%. In a separate 108-row local IAP artifact, exact-match accuracy was approximately 6.5%, with micro Jaccard of approximately 14.7%. These results show that identifying *whether* manipulation exists is substantially easier than identifying every tactic exactly.
+Overall, the results suggest that detecting whether manipulation is present is feasible, but identifying every technique reliably and evaluating the quality of the guarded response remain open problems.
 
 ## Structure
 
